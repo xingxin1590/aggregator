@@ -346,7 +346,7 @@ def assign(
         tag = site.get("tag", "").strip().upper()
 
         # 节点倍率超过该值将会被丢弃
-        rate = float(site.get("rate", 3.0))
+        rate = float(site.get("rate", 10.0))
 
         # 需要注册账号的个数
         num = min(max(1, int(site.get("count", 1))), 10)
